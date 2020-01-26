@@ -1,67 +1,49 @@
 html, body {
     margin: 0;
-    padding: 0;
-    font-family: 'Fira Code', sans-serif;
+    padding: 0px;
     background-color: #171717;
-    color: #ffffff;
+    font-family: 'Fira Code', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-nav {
+.nav {
     width: 100%;
-    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
 .logo {
-    width: 30%;
-    height: 100%;
-    float: left;
+    margin-left: 2%;
+    color: #ffffff;
+    font-size: 40px;
 }
 
-.logo h1 {
-    padding-top: 20px;
-    padding-left: 12%;
-    font-weight: bold;
-    font-size: 48px;
+.menu {
+    display: flex;
+    margin-right: 5%;
+    list-style: none;
 }
 
 .menu-item {
-    width: 70%;
-    height: 100%;
-    float: left;
+    padding: 0px 10px;
 }
 
-.menu-item ul {
-    padding-top: 45px;
-    padding-right: 10%;
-    float: right;
-}
-
-.menu-item ul li {
-    display: inline;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.menu-item ul li a {
+.menu-item a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
+    padding: 5px 15px;
     font-weight: 400;
-    padding: 5px 10px;
-    transition: .2s;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-.menu-item ul li a:hover {
-    color: #171717;
+.menu-item a:hover {
     background-color: #ffffff;
+    color: #171717;
+    transition: .3s;
 }
 
-.menu-item .active-link {
-    color: #171717;
+.menu-item .menu-active {
     background-color: #ffffff;
+    color: #171717;
 }
